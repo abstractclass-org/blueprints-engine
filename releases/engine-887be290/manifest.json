@@ -1,0 +1,161 @@
+{
+  "game": "blueprints",
+  "repository": "abstractclass-org/blueprints-engine",
+  "tag": "engine-887be290",
+  "engine": {
+    "name": "Stamp Duty",
+    "build": "887be290",
+    "protocol": "0.8.0",
+    "search": "91ab0b7d",
+    "settings": {
+      "logDir": "analysis_logs",
+      "reportAnalysisWinratesAs": "BLACK",
+      "wideRootNoise": "0.04",
+      "maxVisits": "500",
+      "rootViews": "true",
+      "numAnalysisThreads": "1",
+      "numSearchThreadsPerAnalysisThread": "1",
+      "nnMaxBatchSize": "1",
+      "nnCacheSizePowerOfTwo": "10",
+      "nnMutexPoolSizePowerOfTwo": "17",
+      "nnRandomize": "true",
+      "staticScoreUtilityFactor": "0.10",
+      "dynamicScoreUtilityFactor": "0.30",
+      "numEigenThreadsPerModel": "1"
+    },
+    "sizes": {
+      "board": 67,
+      "policyChannels": 6
+    }
+  },
+  "assets": [
+    {
+      "file": "blueprints-engine.wasm",
+      "kind": "module",
+      "sha256": "86dec849f5884aaaf6f2e715e4ed6c92fb182a39de58e98e95ad41920bf35122",
+      "bytes": 1549402,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "b6c96-s47076224-d3087660.model-float16.bin",
+      "kind": "model",
+      "sha256": "64c94b2260d6bb16796db8f9ea2f7a495d770a794e9788c8e2f7d69ab52f9a45",
+      "bytes": 2243879,
+      "build": "887be290",
+      "protocol": "0.8.0",
+      "displayName": "Stamp Duty 0.2",
+      "model": {
+        "name": "b6c96-s47076224-d3087660",
+        "trainingSamples": 47076224,
+        "dataRows": 3087660
+      }
+    },
+    {
+      "file": "settings.cfg",
+      "kind": "settings",
+      "sha256": "d0bcd0f3df1d1e0b718885678c066579148aebc99b927a5b2b9ee960e650c588",
+      "bytes": 1055,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "blueprints-engine-gpu.wasm",
+      "kind": "gpu-module",
+      "sha256": "268d36db135c8d8191ba587b0bbf41bcaf757a7c6604223d6ef41510cfe626de",
+      "bytes": 1327469,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "b6c96-s47076224-d3087660.onnx",
+      "kind": "graph",
+      "sha256": "5923d4bc496dfc269e7a3002e8d98308ccaabe05d9abaf22e18c814c8d087bd2",
+      "bytes": 2202324,
+      "build": "887be290",
+      "protocol": "0.8.0",
+      "displayName": "Stamp Duty 0.2",
+      "model": {
+        "name": "b6c96-s47076224-d3087660",
+        "trainingSamples": 47076224,
+        "dataRows": 3087660
+      },
+      "graphOf": "b6c96-s47076224-d3087660.model-float16.bin"
+    },
+    {
+      "file": "blueprints-bot.wasm",
+      "kind": "practice-module",
+      "sha256": "f36be137ce17b6ec2b862559679f233ab8ed8a1f8a629dbca3ecd7ef5b600b47",
+      "bytes": 1834465,
+      "build": "887be290",
+      "protocol": "0.8.0",
+      "interface": "0.1.3"
+    },
+    {
+      "file": "blueprints-bot-batched.wasm",
+      "kind": "practice-threaded-module",
+      "sha256": "cc4398a646cc0fc8d2d588c5aaaad08638af86c77f98857708a2750869abca8a",
+      "bytes": 1629005,
+      "build": "887be290",
+      "protocol": "0.8.0",
+      "interface": "0.1.3"
+    },
+    {
+      "file": "blueprints-eval.wasm",
+      "kind": "practice-evaluator",
+      "sha256": "1a1556643626083f61358ba83c82e5e84306744aa89c945148076f9b9af77c50",
+      "bytes": 602998,
+      "build": "887be290",
+      "protocol": "0.8.0",
+      "maxThreads": 128
+    },
+    {
+      "file": "practice_bot.mjs",
+      "kind": "practice-library",
+      "sha256": "1564fa41eabd315fe0bcdd6429144016ea0489307bf3b0356389532d881b1194",
+      "bytes": 7406,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "cpu_evaluator.mjs",
+      "kind": "cpu-evaluator-library",
+      "sha256": "2c76b1869faf93e5eca13e1e4d6a137e42c9bc24ea03c76ecec442cb4f88b066",
+      "bytes": 3921,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "cpu_eval_worker.mjs",
+      "kind": "cpu-evaluator-library",
+      "sha256": "f6c50a3eb0526f0bcee6dc6f96bb4242a66fdb37053b71e8fbbe35031a8e8d35",
+      "bytes": 2838,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "gpu_engine.mjs",
+      "kind": "gpu-library",
+      "sha256": "3127e1554a28b0f18427dbb85f605b0fe66d35303355706319d7e073d30e81d5",
+      "bytes": 18527,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "NOTICES.txt",
+      "kind": "notices",
+      "sha256": "0c7ce58d634fe4d46d07386e8c5b28c944cca1ed22acdd79f0af81c1eb8285a6",
+      "bytes": 10877,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    },
+    {
+      "file": "LICENSE.txt",
+      "kind": "terms",
+      "sha256": "2090672ae3ca900b4ddc4900be37da3b040e6a1946e0a8dc5e9e7965310ffbcf",
+      "bytes": 2201,
+      "build": "887be290",
+      "protocol": "0.8.0"
+    }
+  ]
+}
